@@ -133,12 +133,16 @@ div {
 
 @media only screen and (max-width: 768px) {
   .searchHeader {
-    margin-left: 31vw;
+    margin-left: 29.5vw;
     font-size: 7vw;
     font-family:'Times New Roman', Times, serif;
     font-weight: bold;
     color: #3b2828;
     margin-top: 2vw;
+  }
+
+  .searchButton {
+    margin-left: 43vw;
   }
 
   .textBox {
@@ -161,10 +165,10 @@ div {
   }
 
   .notFoundButton {
-    margin-left: 46.5vw;
-    width: 11.5vw;
+    margin-left: 42.5vw;
+    width: 14vw;
     margin-top: 12vw;
-    height: 7vw;
+    height: 7.5vw;
     margin-bottom: 3vw;
   }
   
