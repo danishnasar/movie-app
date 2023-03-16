@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Search from './components/search';
+import Movie from './components/movie';
+import NoData from './components/noData';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+      <Route path = '/' element={<Search />}></Route>
+      <Route path='/moviedata' element={<Movie />}></Route>
+      <Route path='/notfound' element={<NoData />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
